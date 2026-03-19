@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>War of Choice</title>
+    <link rel="stylesheet" href="styles2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Operation Daybreak</h1>
+
+    <div id="nameEntry">
+        <label for="playerNameInput">Call sign:</label>
+        <input type="text" id="playerNameInput" placeholder="Arman Reyes">
+        <button id="setNameButton">Confirm Name</button>
+    </div>
+
+    <div id="hud">
+        Health: <span id="healthDisplay">100</span> |
+        Intel: <span id="intelDisplay">0</span>
+    </div>
+
+    <img id="story-image" src="images/map.png" alt="War map of Tehran">
+
+    <div id="story">
+        <p id="paragraph1"></p>
+        <p id="paragraph2"></p>
+        <p id="paragraph3"></p>
+    </div>
+
+    <div id="controls">
+        <button id="nextParagraphButton">Next</button>
+        <button id="choiceAButton">Choice A</button>
+        <button id="choiceBButton">Choice B</button>
+        <button id="reviewCluesButton">Review Intel</button>
+    </div>
+
+    <div id="inventory">
+        <h2>Gear</h2>
+        <ul id="inventoryList"></ul>
+    </div>
+
+    <div id="journal">
+        <h2>Combat Log</h2>
+    </div>
+
+    <div id="tooltip" class="hidden"></div>
+
+    <div id="safe">
+        <h2>Secure Uplink</h2>
+        <input type="text" id="codeInput" placeholder="Enter access code">
+        <button id="submitCodeButton">Upload Evidence</button>
+        <p id="codeMessage"></p>
+    </div>
+</body>
+</html>
